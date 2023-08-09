@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>BigKaiWu</title>
   
-  <subtitle>春风若有怜花意，可否许我再少年</subtitle>
+  <subtitle>可否许我再少年</subtitle>
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-08-08T07:32:49.456Z</updated>
+  <updated>2023-08-09T01:24:14.676Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2018/11/30/hello-world/"/>
     <id>http://example.com/2018/11/30/hello-world/</id>
     <published>2018-11-29T16:00:00.000Z</published>
-    <updated>2023-08-08T07:32:49.456Z</updated>
+    <updated>2023-08-09T01:24:14.676Z</updated>
     
     
     <summary type="html">&lt;p&gt;此 blog 是基于 Hexo 默认主题 landscape 和 ocaen 功能的二次开发。 部署在Github公开仓库上，访问速度可能较慢。&lt;/p&gt;</summary>
