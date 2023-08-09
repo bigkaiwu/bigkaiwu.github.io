@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>写作文档</title>
-    <url>/2018/11/30/hello-world/</url>
+    <url>/2017/11/30/hello-world/</url>
     <content><![CDATA[<p>此 blog 是基于 Hexo 主题 ocaen 功能的二次开发。 部署在Github公开仓库上，访问速度可能较慢。</p>
 <span id="more"></span>
 <hr>
@@ -33,16 +33,6 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm uninstall hexo-generator-index --save</span><br><span class="line">$ npm install hexo-generator-index-pin-top --save</span><br></pre></td></tr></table></figure>
 <p>开启。<br>需要置顶文章的 Front-matter 区域加上 <code>top: ture</code> ，示例：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 新增文章置顶</span><br><span class="line">author: bigkaiwu</span><br><span class="line">top: ture</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
       <tags>
         <tag>Ocean</tag>
