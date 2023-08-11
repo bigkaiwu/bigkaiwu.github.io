@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-08-09T01:50:01.914Z</updated>
+  <updated>2023-08-11T02:10:05.956Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,12 +21,14 @@
     <link href="http://example.com/2018/12/24/%E4%BD%A0%E7%A6%BB%E5%BC%80%E4%BA%86%E5%8D%97%E4%BA%AC%EF%BC%8C%E5%86%8D%E4%B9%9F%E6%B2%A1%E4%BA%BA%E5%92%8C%E6%88%91%E8%AF%B4%E8%BF%87%E8%AF%9D/"/>
     <id>http://example.com/2018/12/24/%E4%BD%A0%E7%A6%BB%E5%BC%80%E4%BA%86%E5%8D%97%E4%BA%AC%EF%BC%8C%E5%86%8D%E4%B9%9F%E6%B2%A1%E4%BA%BA%E5%92%8C%E6%88%91%E8%AF%B4%E8%BF%87%E8%AF%9D/</id>
     <published>2018-12-23T16:00:00.000Z</published>
-    <updated>2023-08-09T01:50:01.914Z</updated>
+    <updated>2023-08-11T02:10:05.956Z</updated>
     
     
     <summary type="html">&lt;p&gt;《你离开了南京，从此没有人和我说话》是一首纯音乐，作者李志。于2005年12月25发表在专辑《梵高先生》中，是专辑的第一首曲子。&lt;/p&gt;</summary>
     
     
+    
+    <category term="随想" scheme="http://example.com/categories/%E9%9A%8F%E6%83%B3/"/>
     
     
     <category term="南京" scheme="http://example.com/tags/%E5%8D%97%E4%BA%AC/"/>
@@ -38,12 +40,14 @@
     <link href="http://example.com/2018/08/22/%E7%9C%8B%E4%B8%8D%E8%A7%81%E9%A3%8E%E6%99%AF%E7%9A%84%E8%A5%BF%E5%AE%89/"/>
     <id>http://example.com/2018/08/22/%E7%9C%8B%E4%B8%8D%E8%A7%81%E9%A3%8E%E6%99%AF%E7%9A%84%E8%A5%BF%E5%AE%89/</id>
     <published>2018-08-21T16:00:00.000Z</published>
-    <updated>2023-08-08T06:17:30.461Z</updated>
+    <updated>2023-08-11T02:10:16.164Z</updated>
     
     
     <summary type="html">&lt;p&gt;西安，以前一直默默无闻，现在被抖音上摔碗、吃毛笔、白鹿原、大雁塔等等带火了，这让我想起来，我也是去过西安的。&lt;/p&gt;</summary>
     
     
+    
+    <category term="随想" scheme="http://example.com/categories/%E9%9A%8F%E6%83%B3/"/>
     
     
     <category term="西安" scheme="http://example.com/tags/%E8%A5%BF%E5%AE%89/"/>
@@ -57,12 +61,14 @@
     <link href="http://example.com/2017/11/30/hello-world/"/>
     <id>http://example.com/2017/11/30/hello-world/</id>
     <published>2017-11-29T16:00:00.000Z</published>
-    <updated>2023-08-09T06:09:42.351Z</updated>
+    <updated>2023-08-11T02:20:17.397Z</updated>
     
     
     <summary type="html">&lt;p&gt;此 blog 是基于 Hexo 主题 ocaen 功能的二次开发。 部署在Github公开仓库上，访问速度可能较慢。&lt;/p&gt;</summary>
     
     
+    
+    <category term="文档" scheme="http://example.com/categories/%E6%96%87%E6%A1%A3/"/>
     
     
     <category term="Ocean" scheme="http://example.com/tags/Ocean/"/>
