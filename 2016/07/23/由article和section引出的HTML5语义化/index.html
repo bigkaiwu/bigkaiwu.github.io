@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  <meta name="keywords" content="生活,亲子,前端,读书,音乐,吉他,旅行">
+  
+  
+  <meta name="description" content="记录个人生活随想">
+  
+  <title>
+    由article和section引出的HTML5语义化 |
+    
+    BigKaiWu
+  </title>
+  <!-- Icon -->
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<script src="/js/pace.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="BigKaiWu" type="application/atom+xml">
+</head>
+
+<body>
+  <main class="content">
+    <section class="outer">
+  <article id="post-由article和section引出的HTML5语义化" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+  
+  <h1 class="article-title" itemprop="name">
+    由article和section引出的HTML5语义化
+  </h1>
+  
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2016/07/23/%E7%94%B1article%E5%92%8Csection%E5%BC%95%E5%87%BA%E7%9A%84HTML5%E8%AF%AD%E4%B9%89%E5%8C%96/" class="article-date">
+  <time datetime="2016-07-23T02:47:26.000Z" itemprop="datePublished">2016-07-23</time>
+</a>
+      
+<div class="article-category">
+  <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+</div>
+
+    </div>
+    
+
+    
+    
+<div class="tocbot"></div>
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+      
+        <hr>
+<p>平时仿站切图自己写代码的时候，基本都是使用div这种标签，像article和section这样带有语义的标签没有怎么用过，以前面试的时候也被问过对HTML5语义化的理解，最后也不了了之。</p>
+<span id="more"></span>
+
+<p>距HTML5标准规范制定完成并公开发布已经有好些年了，但是在实际运用时，真正使用HTML5标签来开发的似乎不是很多，可能一部分原因是仍有部分用户在使用低版本浏览器。恰好前两天view-source源代码时，看到了article和section互相嵌套使用的案例，就索性研究了一下。如下：</p>
+<h3 id="div、section、article主要区别，以及适用场合"><a href="#div、section、article主要区别，以及适用场合" class="headerlink" title="div、section、article主要区别，以及适用场合"></a>div、section、article主要区别，以及适用场合</h3><p>1.div在html早期版本就支持了，section和article是html5提出的两个语义话标签。如果只是针对一个块内容做样式化，三者并没有区别。</p>
+<p>2.作为语义化标签，section应用的典型场景有文章的章节、标签对话框中的标签页、或者论文中有编号的部分。一般来说，当元素内容明确地出现在文档大纲中时，section就是适用的。</p>
+<p>3.对于article标签来说，无论从结构上还是内容上来说，article本身就是独立的、完整的。最简单的方法就是看一段内容脱离了所在的语境之后，是否还是完整的、独立的，如果是，则应该用article标签。</p>
+<p>4.div、section、article，语义上从无到有，逐渐增强。div无任何语义，仅仅用作样式化或者脚本化，对于一段主题性的内容，比较适用section，而假设这段内容是可以脱离上下文，作为完整的结构体独立存在的一段内容，那么就适合用article。原则上来说，能使用article的时候，也是可以使用section的。但是视情况而定，假如更适合使用article，那么就不要使用section了。</p>
+<p>5.W3C 警告说：section 不仅仅是一个普通的容器标签。当一个标签只是为了样式化或者方便脚本使用时，应该使用 div 。</p>
+<h3 id="什么时候使用？"><a href="#什么时候使用？" class="headerlink" title="什么时候使用？"></a>什么时候使用？</h3><p>1.div：作为布局以及样式化时使用。</p>
+<p>2.section：表示文档中的节，一般是具有标题的。比如：文档大纲、文档章节、博客条目、用户评论部分或者论文中有编号的部分时使用；</p>
+<p>通常会带有标题。如果没有标题，那么就不推荐使用section</p>
+<p>3.article：表示独立的自包含内容，如：一篇文章。文章找那个可以包含标题、内容、注脚</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;article&gt;</span><br><span class="line">         &lt;header&gt;</span><br><span class="line">                     &lt;h1&gt;文章标题&lt;/h1&gt;</span><br><span class="line">                     &lt;p&gt;作者信息 发布时间&lt;/p&gt;</span><br><span class="line">         &lt;/header&gt;</span><br><span class="line">         &lt;section&gt;</span><br><span class="line">                     &lt;p&gt;文章正文&lt;/p&gt;</span><br><span class="line">         &lt;/section&gt;</span><br><span class="line">         &lt;footer&gt;</span><br><span class="line">                     &lt;p&gt;版权信息 注脚&lt;/p&gt;</span><br><span class="line">         &lt;/footer&gt;</span><br><span class="line">&lt;/article&gt;</span><br></pre></td></tr></table></figure>
+
+<p>标注：a、：定义文档的页面介绍信息，比如：文章标题、发表时间</p>
+<p>b、article和section可以互相嵌套使用</p>
+<h3 id="什么是HTML5语义化？"><a href="#什么是HTML5语义化？" class="headerlink" title="什么是HTML5语义化？"></a>什么是HTML5语义化？</h3><p>简单地说，就是用合理、正确的标签来展示内容，比如h1~h6定义标题。</p>
+<p>语义化优点：</p>
+<p>易于用户阅读，样式丢失的时候能让页面呈现清晰的结构。<br>有利于SEO，搜索引擎根据标签来确定上下文和各个关键字的权重。<br>方便其他设备解析，如盲人阅读器根据语义渲染网页<br>有利于开发和维护，语义化更具可读性，代码更好维护，与CSS3关系更和谐。</p>
+<h4 id="1、"><a href="#1、" class="headerlink" title="1、&lt;header&gt;"></a>1、<code>&lt;header&gt;</code></h4><p><code>&lt;header&gt;</code>定义文档或者文档的部分区域的页眉，应作为介绍内容或者导航链接栏的容器。</p>
+<p>在一个文档中，您可以定义多个<code>&lt;header&gt;</code>元素，但需要注意的是<code>&lt;header&gt;</code>元素不能作为<code>&lt;address&gt;</code>、<code>&lt;footer&gt;</code> 或 <code>&lt;header&gt;</code> 元素的子元素。</p>
+<h4 id="2、"><a href="#2、" class="headerlink" title="2、&lt;nav&gt;"></a>2、<code>&lt;nav&gt;</code></h4><p><code>&lt;nav&gt;</code>描述一个含有多个超链接的区域，该区域包含跳转到其他页面或页面内部其他部分的链接列表。</p>
+<p>在一个文档中，可定义多个<code>&lt;nav&gt;</code>元素。</p>
+<h4 id="3、"><a href="#3、" class="headerlink" title="3、&lt;main&gt;"></a>3、<code>&lt;main&gt;</code></h4><p><code>&lt;main&gt;</code> 定义文档的主要内容，该内容在文档中应当是独一无二的，不包含任何在文档中重复的内容，比如侧边栏，导航栏链接，版权信息，网站logo，搜索框（除非搜索框作为文档的主要功能）。</p>
+<p>需要注意的是在一个文档中不能出现多个<code>&lt;main&gt;</code>标签。</p>
+<h4 id="4、"><a href="#4、" class="headerlink" title="4、&lt;article&gt;"></a>4、<code>&lt;article&gt;</code></h4><p><code>&lt;article&gt;</code>元素表示文档、页面、应用或网站中的独立结构，是可独立分配的、可复用的结构，如在发布中，它可能是论坛帖子、杂志或新闻文章、博客、用户提交的评论、交互式组件，或者其他独立的内容项目。</p>
+<p>当<code>&lt;article&gt;</code>元素嵌套使用时，则该元素代表与外层元素有关的文章。例如，代表博客评论的<code>&lt;article&gt;</code>元素可嵌套在代表博客文章的<code>&lt;article&gt;</code>元素中。</p>
+<h4 id="5、"><a href="#5、" class="headerlink" title="5、&lt;aside&gt;"></a>5、<code>&lt;aside&gt;</code></h4><p><code>&lt;aside&gt;</code> 元素表示一个和其余页面内容几乎无关的部分，被认为是独立于该内容的一部分且可以被单独的拆分出来而不会影响整体。通常表现为侧边栏或嵌入内容。</p>
+<h4 id="6、"><a href="#6、" class="headerlink" title="6、&lt;footer&gt;"></a>6、<code>&lt;footer&gt;</code></h4><p><code>&lt;footer&gt;</code>定义最近一个章节内容或者根节点元素的页脚。一个页脚通常包含该章节作者、版权数据或者与文档相关的链接等信息。</p>
+<p>使用footer插入联系信息时，应在 footer 元素内使用<code> &lt;address&gt;</code> 元素。</p>
+<p>注意不能包含<code>&lt;footer&gt;</code>或者<code>&lt;header&gt;</code></p>
+<h4 id="7、"><a href="#7、" class="headerlink" title="7、&lt;section&gt;"></a>7、<code>&lt;section&gt;</code></h4><p><code>&lt;section&gt;</code>表示文档中的一个区域（或节），比如，内容中的一个专题组。</p>
+<p>当然，最后还是要说一下，有些语义不合适的情况下，也不要强行使用，老老实实的该用什么用什么吧。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2016/07/23/%E7%94%B1article%E5%92%8Csection%E5%BC%95%E5%87%BA%E7%9A%84HTML5%E8%AF%AD%E4%B9%89%E5%8C%96/" data-id="cllrhd3dn0000hwuhe9ab47jr" class="article-share-link">
+        分享
+      </a>
+      
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML5%E8%AF%AD%E4%B9%89%E5%8C%96/" rel="tag">HTML5语义化</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+<nav class="article-nav">
+  
+  <a href="/2016/08/14/%E5%88%87%E6%8D%A2%E7%AA%97%E5%8F%A3%E6%97%B6%E7%9A%84title%E6%9B%B4%E6%94%B9/" class="article-nav-link">
+    <strong class="article-nav-caption">前一篇</strong>
+    <div class="article-nav-title">
+      
+      切换窗口时的title更改
+      
+    </div>
+  </a>
+  
+  
+  <a href="/2015/11/30/hello-world/" class="article-nav-link">
+    <strong class="article-nav-caption">后一篇</strong>
+    <div class="article-nav-title">写作文档</div>
+  </a>
+  
+</nav>
+
+  
+
+  
+  
+  
+  
+
+</article>
+</section>
+    <footer class="footer">
+  <div class="outer">
+    <ul class="list-inline">
+      <li>BigKaiWu &copy; 2023</li>
+      
+        <li>
+          
+            <a href="https://beian.miit.gov.cn/" target="_blank"></a>
+            
+        </li>
+      
+      <li>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
+      <li>theme  <a target="_blank" rel="noopener" href="https://github.com/zhwangart/hexo-theme-ocean">Ocean</a></li>
+    </ul>
+    <p><ul class="list-inline">
+  
+  <li><i class="fe fe-smile-alt tooltip" data-tooltip="UV"></i> <span id="busuanzi_value_site_uv"></span></li>
+  
+  <li><i class="fe fe-bookmark tooltip" data-tooltip="PV"></i> <span id="busuanzi_value_page_pv"></span></li>
+  
+</ul></p>
+  </div>
+</footer>
+  </main>
+  <aside class="sidebar">
+    <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/shark.svg" alt="BigKaiWu"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">首页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/gallery">相册</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">关于</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/favorites">收藏</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link nav-item-search" title="搜索">
+        <i class="fe fe-search"></i>
+        搜索
+      </a>
+    </li>
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      <div class="totop" id="totop">
+  <i class="fe fe-rocket"></i>
+</div>
+    </li>
+    <li class="nav-item">
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="fe fe-feed"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="搜索...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+  </aside>
+  
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script src="/js/tocbot.min.js"></script>
+
+
+<script>
+  // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto',
+  });
+</script>
+
+
+
+<script src="/js/ocean.js"></script>
+
+</body>
+
+</html>
