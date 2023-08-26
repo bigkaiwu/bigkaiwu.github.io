@@ -171,10 +171,38 @@ document.onselectstart=new Function(&quot;event.returnValue=false&quot;);
 </code></pre>
 ]]></content>
       <categories>
-        <category>JavaScript</category>
+        <category>前端</category>
       </categories>
       <tags>
         <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>从Vuejs看近年来前端开发趋势</title>
+    <url>/2018/09/09/%E4%BB%8EVuejs%E7%9C%8B%E8%BF%91%E5%B9%B4%E6%9D%A5%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B6%8B%E5%8A%BF/</url>
+    <content><![CDATA[<p>Vuejs的产生背景得益于近年来前端开发趋势的变化。</p>
+<p>1.旧浏览器逐渐淘汰，移动端需求增加。</p>
+<p>旧浏览器通常指IE6-IE8，并不支持ES5特性 ，而Vuejs的核心实现就是利用了es5的Object.defineproperty的特性。而IE9+，Chrome，safari，firefox这些浏览器对ES5特性是完全支持的。而移动端大部分浏览器都是基于webkit内核，ES5在移动端也是全面支持的，因此Vue可以在移动端和一些pc端的高端浏览器大显身手。</p>
+<span id="more"></span>
+
+<p>2.前端交互越来越多，功能越来越复杂。</p>
+<p>现如今，前端包罗万象，产品形态五花八门涉及广，可以是一些高大上的技术库和框架，酷炫的运营活动页面，甚至是好玩的H5小游戏，不过这些一两个文件的小项目并不是前端应用的主要应用场景，更具商业价值的是复杂的web应用，它们功能完善，页面繁多，为用户提供了完整的交互体验。即我们常见的新闻趣味站，在线购物平台，社交网络，金融信贷应用，音乐互动社区，视屏分享平台，打车出行平台等。这些网站或平台的特点就是交互多，功能复杂。</p>
+<p>2.架构从传统后台MVC向REST API+前端mv*迁移</p>
+<p>传统的后台mvc方式是当前前端和后端发生数据交互时刷新整个页面，这样的用户体验是非常差的，因此我们通过ajax的方式和后端REST API做通讯，异步刷新页面的某个区块，来提升体验，同时，把mv*拿到前端来做。</p>
+<p>因此这些趋势变化会对前端产生一些新的需求，我们希望前端有良好的组织架构，前端的代码量和对前端代码开发的效率和可维护性都有了一定的要求，vuejs的产生就是为了解决这些问题。</p>
+<p>mv*:mvc&#x2F;mvp&#x2F;mvvc(vue.js)</p>
+<p><img src="/%E5%8D%81%E5%B9%B4%E4%B8%80%E8%A7%89%E6%89%AC%E5%B7%9E%E6%A2%A6/mvvm.png"></p>
+<p>mvvm应用场景：</p>
+<p>针对具有复杂交互逻辑的前端应用</p>
+<p>提供基础的架构抽象</p>
+<p>通过Ajax数据持久化，保证前端用户体验</p>
+<p>当前端进行数据操作的时候，可以通过ajax请求对后端做数据持久化，不需要刷新整个页面，只需要改动dom需要改动部分的内容。特别是移动端应用场景，刷新整个页面的代价太昂贵，会重新加载很多资源。虽然有些资源会被缓存，但是页面的dom，js，css都会被浏览器重新解析一遍，因此移动端页面通常被做成spa单页面应用。</p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
       </tags>
   </entry>
   <entry>
