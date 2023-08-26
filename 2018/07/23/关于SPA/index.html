@@ -12,7 +12,7 @@
   <meta name="description" content="记录个人生活随想">
   
   <title>
-    js复制网页内容时自动加文章地址版权 |
+    关于SPA |
     
     BigKaiWu
   </title>
@@ -37,7 +37,7 @@
 <body>
   <main class="content">
     <section class="outer">
-  <article id="post-js复制网页内容时自动加文章地址版权" class="article article-type-post" itemscope
+  <article id="post-关于SPA" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -46,7 +46,7 @@
       
   
   <h1 class="article-title" itemprop="name">
-    js复制网页内容时自动加文章地址版权
+    关于SPA
   </h1>
   
   
@@ -56,8 +56,8 @@
 
     
     <div class="article-meta">
-      <a href="/2018/09/23/js%E5%A4%8D%E5%88%B6%E7%BD%91%E9%A1%B5%E5%86%85%E5%AE%B9%E6%97%B6%E8%87%AA%E5%8A%A8%E5%8A%A0%E6%96%87%E7%AB%A0%E5%9C%B0%E5%9D%80%E7%89%88%E6%9D%83/" class="article-date">
-  <time datetime="2018-09-23T07:02:37.000Z" itemprop="datePublished">2018-09-23</time>
+      <a href="/2018/07/23/%E5%85%B3%E4%BA%8ESPA/" class="article-date">
+  <time datetime="2018-07-23T03:08:22.000Z" itemprop="datePublished">2018-07-23</time>
 </a>
       
 <div class="article-category">
@@ -69,64 +69,34 @@
 
     
     
+<div class="tocbot"></div>
+
     
 
     <div class="article-entry" itemprop="articleBody">
       
       
       
-        <p>这是个用金钱堆砌的互联网百花齐放的信息时代，也是个不注重版权的盗版时代。</p>
+        <h3 id="单页面应用程序（即-Single-page-App，简称-SPA）"><a href="#单页面应用程序（即-Single-page-App，简称-SPA）" class="headerlink" title="单页面应用程序（即 Single-page App，简称 SPA）"></a>单页面应用程序（即 Single-page App，简称 SPA）</h3><p>现如今，网页开发人员不再把所开发的产品叫做网站，而是叫做网页应用。虽然二者没有严格区分，但后者的交互性和动态性更强，能让用户自行操作并且收到特定回应。</p>
 <span id="more"></span>
 
-<p>而基本上每个前端er都或轻或重的搞了个自己的博客，如何在别人复制你网站文章内容时，自动在内容的尾端添加一段版权文本加当前页面的链接用以保护我们的权益被摆上日程。</p>
-<p>功能代码，不多解释：</p>
-<pre><code>&lt;script type=&#39;text/javascript&#39;&gt;
-function addLink() &#123;
-    var body_element = document.getElementsByTagName(&#39;body&#39;)[0];
-    var selection;
-    selection = window.getSelection();
-    var pagelink = &quot;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;著作权归bigkaiwu个人博客所有&lt;br /&gt;商业转载请联系作者获得授权，非商业转载请注明出处.&lt;br /&gt;本文来源：&lt;a href=&#39;&quot;+document.location.href+&quot;&#39;&gt;&quot;+document.location.href+&quot;&lt;/a&gt;&quot;;
-    var copy_text = selection + pagelink;
-    var new_div = document.createElement(&#39;div&#39;);
-    new_div.style.left=&#39;-99999px&#39;;
-    new_div.style.position=&#39;absolute&#39;;
-    body_element.appendChild(new_div );
-    new_div.innerHTML = copy_text ;
-    selection.selectAllChildren(new_div );
-    window.setTimeout(function() &#123;
-        body_element.removeChild(new_div );
-    &#125;,0);
-&#125;
-    document.oncopy = addLink;
-&lt;/script&gt;
-</code></pre>
-<p>又或者你心狠一点，直接把复制禁用掉：</p>
-<pre><code>&lt;script&gt; 
-function noCopy() 
-&#123; 
-    event.returnValue = false; 
-&#125; 
-&lt;/script&gt; 
-&lt;body oncopy = &quot;noCopy()&quot;&gt;
-</code></pre>
-<p>或者，心地善良的你选择给个禁止复制的小提示：</p>
-<pre><code>&lt;body oncopy=&quot;alert(&#39;对不起，禁止复制！&#39;);return false;&quot;&gt;
-</code></pre>
-<p>然后，你突然又想复制失效的同时，让右键也一起禁用掉，可以使用下面的代码：</p>
-<pre><code>&lt;script language=&quot;Javascript&quot;&gt; 
-document.oncontextmenu=new Function(&quot;event.returnValue=false&quot;); 
-document.onselectstart=new Function(&quot;event.returnValue=false&quot;); 
-&lt;/script&gt;
-</code></pre>
+<p>以前，浏览器会收到来自服务器的 HTML。当用户访问另一个 URL 地址时，需要全页刷新，服务器也会发送全新 HTML。这就是所谓的服务器端渲染。</p>
+<p>但是，在现代 SPA 中，客户端渲染已经取代了服务器端渲染。浏览器会先从服务器上加载出最初图像，和包括框架、库和应用代码在内的脚本，以及整个应用所需的样式表。当用户访问其他页面时，页面将不会进行整体刷新，而是通过 HTML5 History API 对页面地址进行更新。以 JSON 形式呈现出来的新页面所需的新数据，将会通过向服务器发出的 AJAX 请求，由浏览器检索进行检索。接着，SPA 会通过原先在页面中下载好的 JavaScript，来对页面数据进行动态更新。</p>
+<h3 id="SPA-的优点"><a href="#SPA-的优点" class="headerlink" title="SPA 的优点"></a>SPA 的优点</h3><h4 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h4><p>应用针对用户操作给出的反应更加灵敏，不会由于页面整体刷新而出现闪退；</p>
+<h4 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h4><p> 向服务器发送的 HTTP 请求减少，无需在每一页进行重复下载；</p>
+<h4 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h4><p> 用户和服务器划分明确，无需修改服务器代码就可以轻松为新用户创建不同平台。另外，只要不违背 API 规则，还可以分别对用户和服务器的技术堆栈进行修改。</p>
+<h3 id="SPA-的缺点"><a href="#SPA-的缺点" class="headerlink" title="SPA 的缺点"></a>SPA 的缺点</h3><h4 id="1-1"><a href="#1-1" class="headerlink" title="1."></a>1.</h4><p> 最开始的加载任务较重，包括框架和应用代码等；</p>
+<h4 id="2-1"><a href="#2-1" class="headerlink" title="2."></a>2.</h4><p>需要对服务器进行额外的配置操作，让它将所有请求汇集到同一个进入点；</p>
+<h4 id="3-1"><a href="#3-1" class="headerlink" title="3."></a>3.</h4><p>SPA 依靠 JavaScript 来呈现内容，但并不是所有搜索引擎都能够在爬虫过程中执行 JavaScript。这一点，无疑会对应用的搜索引擎优化带来负面影响。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2018/09/23/js%E5%A4%8D%E5%88%B6%E7%BD%91%E9%A1%B5%E5%86%85%E5%AE%B9%E6%97%B6%E8%87%AA%E5%8A%A8%E5%8A%A0%E6%96%87%E7%AB%A0%E5%9C%B0%E5%9D%80%E7%89%88%E6%9D%83/" data-id="cllrgslqm0000m8uh9g277l1z" class="article-share-link">
+      <a data-url="http://example.com/2018/07/23/%E5%85%B3%E4%BA%8ESPA/" data-id="cllrh0enf00009suhfkax2432" class="article-share-link">
         分享
       </a>
       
-<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/" rel="tag">js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%B8%80%E4%BA%9B%E6%9C%89%E8%B6%A3%E7%9A%84%E4%B8%9C%E8%A5%BF/" rel="tag">一些有趣的东西</a></li></ul>
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SPA/" rel="tag">SPA</a></li></ul>
 
     </footer>
 
@@ -136,19 +106,19 @@ document.onselectstart=new Function(&quot;event.returnValue=false&quot;);
   
 <nav class="article-nav">
   
-  <a href="/2018/12/24/%E4%BD%A0%E7%A6%BB%E5%BC%80%E4%BA%86%E5%8D%97%E4%BA%AC%EF%BC%8C%E5%86%8D%E4%B9%9F%E6%B2%A1%E4%BA%BA%E5%92%8C%E6%88%91%E8%AF%B4%E8%BF%87%E8%AF%9D/" class="article-nav-link">
+  <a href="/2018/08/14/%E5%88%87%E6%8D%A2%E7%AA%97%E5%8F%A3%E6%97%B6%E7%9A%84title%E6%9B%B4%E6%94%B9/" class="article-nav-link">
     <strong class="article-nav-caption">前一篇</strong>
     <div class="article-nav-title">
       
-      你离开了南京，从此没有人和我说话
+      切换窗口时的title更改
       
     </div>
   </a>
   
   
-  <a href="/2018/09/09/%E4%BB%8EVuejs%E7%9C%8B%E8%BF%91%E5%B9%B4%E6%9D%A5%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B6%8B%E5%8A%BF/" class="article-nav-link">
+  <a href="/2017/11/30/hello-world/" class="article-nav-link">
     <strong class="article-nav-caption">后一篇</strong>
-    <div class="article-nav-title">从Vuejs看近年来前端开发趋势</div>
+    <div class="article-nav-title">写作文档</div>
   </a>
   
 </nav>
