@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-08-17T09:57:43.102Z</updated>
+  <updated>2023-09-02T09:52:11.404Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>加密文章测试</title>
+    <link href="http://example.com/2023/09/02/%E8%BF%99%E6%98%AF%E5%8A%A0%E5%AF%86%E6%96%87%E7%AB%A0%E6%B5%8B%E8%AF%95/"/>
+    <id>http://example.com/2023/09/02/%E8%BF%99%E6%98%AF%E5%8A%A0%E5%AF%86%E6%96%87%E7%AB%A0%E6%B5%8B%E8%AF%95/</id>
+    <published>2023-09-02T09:33:15.000Z</published>
+    <updated>2023-09-02T09:52:11.404Z</updated>
+    
+    
+    <summary type="html">这篇文章被设置了密码，您需要密码来访问</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>年少不可得之物,终将困其一生</title>
