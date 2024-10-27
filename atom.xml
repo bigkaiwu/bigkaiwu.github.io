@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>BigKaiWu</title>
+  
+  <subtitle>可否许我再少年？</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2024-10-26T10:51:24.178Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Bigkaiwu</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>孤单又灿烂的小太阳</title>
+    <link href="http://example.com/2024/07/28/%E5%AD%A4%E5%8D%95%E5%8F%88%E7%81%BF%E7%83%82%E7%9A%84%E5%B0%8F%E5%A4%AA%E9%98%B3/"/>
+    <id>http://example.com/2024/07/28/%E5%AD%A4%E5%8D%95%E5%8F%88%E7%81%BF%E7%83%82%E7%9A%84%E5%B0%8F%E5%A4%AA%E9%98%B3/</id>
+    <published>2024-07-28T08:57:27.000Z</published>
+    <updated>2024-10-26T10:51:24.178Z</updated>
+    
+    
+    <summary type="html">这篇文章被设置了密码，您需要密码来访问!</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>年少不可得之物，终将困其一生</title>
+    <link href="http://example.com/2023/04/07/%E5%B9%B4%E5%B0%91%E4%B8%8D%E5%8F%AF%E5%BE%97%E4%B9%8B%E7%89%A9%EF%BC%8C%E7%BB%88%E5%B0%86%E5%9B%B0%E5%85%B6%E4%B8%80%E7%94%9F/"/>
+    <id>http://example.com/2023/04/07/%E5%B9%B4%E5%B0%91%E4%B8%8D%E5%8F%AF%E5%BE%97%E4%B9%8B%E7%89%A9%EF%BC%8C%E7%BB%88%E5%B0%86%E5%9B%B0%E5%85%B6%E4%B8%80%E7%94%9F/</id>
+    <published>2023-04-07T08:06:40.000Z</published>
+    <updated>2024-10-26T09:06:05.250Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;近来，武念念总是说自己是个公主，想要各式各样的公主裙和水晶高跟鞋。&lt;/p&gt;
+&lt;p&gt;这让我想起来一个朋友。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>可乐与桃子水</title>
+    <link href="http://example.com/2022/07/12/%E5%8F%AF%E4%B9%90%E4%B8%8E%E6%A1%83%E5%AD%90%E6%B0%B4/"/>
+    <id>http://example.com/2022/07/12/%E5%8F%AF%E4%B9%90%E4%B8%8E%E6%A1%83%E5%AD%90%E6%B0%B4/</id>
+    <published>2022-07-12T02:03:52.000Z</published>
+    <updated>2024-10-26T09:05:56.787Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;我女儿念念，在她两岁多不到三岁的时候，我在她面前喝可乐。第一次的时候，她吵着要喝，我说爸爸喝的是酒，小孩子不能喝酒，她就作罢了。&lt;/p&gt;
+&lt;p&gt;第二次的时候也是如此。第三次的时候，秉承着对世界万物的好奇，她的语气坚决而诚恳。她说，爸爸求求你了嘛，就给我喝一小口，我知道自己没法拒绝她。所以，用瓶盖给她倒了一小盖。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>你离开了南京，从此没有人和我说话</title>
+    <link href="http://example.com/2018/08/25/%E4%BD%A0%E7%A6%BB%E5%BC%80%E4%BA%86%E5%8D%97%E4%BA%AC%EF%BC%8C%E4%BB%8E%E6%AD%A4%E6%B2%A1%E6%9C%89%E4%BA%BA%E5%92%8C%E6%88%91%E8%AF%B4%E8%AF%9D/"/>
+    <id>http://example.com/2018/08/25/%E4%BD%A0%E7%A6%BB%E5%BC%80%E4%BA%86%E5%8D%97%E4%BA%AC%EF%BC%8C%E4%BB%8E%E6%AD%A4%E6%B2%A1%E6%9C%89%E4%BA%BA%E5%92%8C%E6%88%91%E8%AF%B4%E8%AF%9D/</id>
+    <published>2018-08-25T06:06:31.000Z</published>
+    <updated>2024-10-27T07:53:52.444Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;《你离开了南京，从此没有人和我说话》是一首纯音乐，作者李志。于2005年12月25发表在专辑《梵高先生》中，是专辑的第一首曲子。&lt;/p&gt;
+&lt;p&gt;第一次听时应该是我高中毕业，不知道谁放了这首曲子，但那时我还并不在南京。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>现实不过就是一场漫长的告别</title>
+    <link href="http://example.com/2016/04/18/%E7%8E%B0%E5%AE%9E%E4%B8%8D%E8%BF%87%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E6%BC%AB%E9%95%BF%E7%9A%84%E5%91%8A%E5%88%AB/"/>
+    <id>http://example.com/2016/04/18/%E7%8E%B0%E5%AE%9E%E4%B8%8D%E8%BF%87%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E6%BC%AB%E9%95%BF%E7%9A%84%E5%91%8A%E5%88%AB/</id>
+    <published>2016-04-18T07:14:00.000Z</published>
+    <updated>2024-10-27T07:16:10.008Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;前些日子和好友晓杰聊天，得知他赞助女朋友在万达广场开了一家蛋糕店，店名很有意思，叫做“娃娃同学”，据说是他女朋友取的。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="随想" scheme="http://example.com/tags/%E9%9A%8F%E6%83%B3/"/>
+    
+  </entry>
+  
+</feed>
